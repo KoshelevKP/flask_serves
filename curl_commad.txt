@@ -1,0 +1,7 @@
+Примеры команд для API через curl для windows:
+
+Отправить сообщение:
+curl -i -H "Content-Type: application/json" -X POST -d "{"""id""": ["""1111""", """1112"""], """messengers""": ["""Telegram""", """WhatsApp"""], """text""": """Hello"""}" http://localhost:5000/messengers/api/v1.0/send_message
+
+Отправить сообщение с датой:
+curl -i -H "Content-Type: application/json" -X POST -d "{"""id""": ["""1111""", """1112"""], """messengers""": ["""Telegram""", """WhatsApp"""], """text""": """Hello""", """date""": """10.06.2020 4:16"""}" http://localhost:5000/messengers/api/v1.0/send_message
